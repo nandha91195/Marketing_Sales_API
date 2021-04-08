@@ -1,5 +1,5 @@
-const School = require("../models/school");
-const Class = require("../models/class");
+const School = require("../models/shirt");
+const Class = require("../models/jeans");
 const ObjectId = require("mongoose").Types.ObjectId;
 const { to, ReE, ReS, isNull } = require("../services/util.service");
 const HttpStatus = require("http-status");
@@ -66,7 +66,7 @@ exports.getAll = async (req, res) => {
 
   return ReS(
     res,
-    { message: "Section fetched", section: exisistingSection },
+    { message: "Section fetched", class: exisistingSection },
     HttpStatus.OK
   );
 };

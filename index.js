@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 // define a simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to St.Joseph hr sec School" });
+  res.json({ message: "Welcome to Marketing and Sales" });
 });
 
 

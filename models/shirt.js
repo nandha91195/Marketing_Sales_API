@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 
-const schoolDetails = new Schema(
+const ShirtsDetails = new Schema(
   {
     schoolName: {
       type: String,
@@ -22,7 +22,7 @@ const schoolDetails = new Schema(
   { timestamps: true }
 );
 
-module.exports = School = mongoose.model("School", schoolDetails);
+module.exports = Shirts = mongoose.model("Shirt", ShirtsDetails);
 
 
 // const studentObject = new Schema({

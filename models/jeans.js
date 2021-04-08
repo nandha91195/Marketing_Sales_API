@@ -1,20 +1,12 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-let classDetails = new Schema(
+let JeansDetails = new Schema(
   {
-    className: {
+    jeansName: {
       type: String,
       required: true,
     },
-
-    section: [
-      {
-        sectionName: {
-          type: String,
-        }
-      }
-    ],
     
     createdBy: {
       type: mongoose.Schema.Types.ObjectId,
@@ -24,4 +16,4 @@ let classDetails = new Schema(
   { timestamps: true }
 );
 
-module.exports = Class = mongoose.model("Class", classDetails);
+module.exports = Jeans = mongoose.model("Jeans", JeansDetails);
